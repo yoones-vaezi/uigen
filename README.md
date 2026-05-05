@@ -67,3 +67,6 @@ Open [http://localhost:3000](http://localhost:3000)
 - Prisma with SQLite
 - Anthropic Claude AI
 - Vercel AI SDK
+
+
+Just adding some comments here to test the pr skill. 
