@@ -1,0 +1,87 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e5]:
+      - heading "React Component Generator" [level=1] [ref=e7]
+      - generic [ref=e9]:
+        - generic [ref=e44]:
+          - generic [ref=e45]:
+            - generic [ref=e48]: Create a pricing card component
+            - img [ref=e51]
+          - generic [ref=e76]:
+            - img [ref=e79]
+            - generic [ref=e84]:
+              - generic [ref=e87]: Creating App.jsx
+              - separator [ref=e88]
+              - generic [ref=e89]:
+                - paragraph [ref=e90]: "Done! I've created a pricing card component with three tiers (Starter, Pro, Enterprise). Features:"
+                - list [ref=e91]:
+                  - listitem [ref=e92]:
+                    - strong [ref=e93]: Dark gradient background
+                    - text: with purple/slate tones
+                  - listitem [ref=e94]:
+                    - strong [ref=e95]: Glassmorphism cards
+                    - text: with backdrop blur and semi-transparent backgrounds
+                  - listitem [ref=e96]:
+                    - strong [ref=e97]: Featured Pro plan
+                    - text: with scale-up effect and glow
+                  - listitem [ref=e98]:
+                    - strong [ref=e99]: Gradient accents
+                    - text: on top borders and buttons
+                  - listitem [ref=e100]:
+                    - strong [ref=e101]: Custom color schemes
+                    - text: per tier (cyan, purple/pink, amber/orange)
+                  - listitem [ref=e102]:
+                    - strong [ref=e103]: Hover effects
+                    - text: with glowing backgrounds and button scaling
+                  - listitem [ref=e104]:
+                    - strong [ref=e105]: Smooth transitions
+                    - text: throughout
+        - generic [ref=e19]:
+          - textbox "Describe the React component you want to create..." [ref=e20]
+          - button [disabled] [ref=e21]:
+            - img [ref=e22]
+    - separator [ref=e25]
+    - generic [ref=e27]:
+      - generic [ref=e28]:
+        - tablist [ref=e30]:
+          - tab "Preview" [selected] [ref=e31]
+          - tab "Code" [ref=e32]
+        - generic [ref=e33]:
+          - button "Sign In" [ref=e34]
+          - button "Sign Up" [ref=e35]
+      - iframe [ref=e106]:
+        - generic [ref=f4e4]:
+          - generic [ref=f4e7]:
+            - heading "Starter" [level=3] [ref=f4e9]
+            - paragraph [ref=f4e10]: Perfect for getting started
+            - generic [ref=f4e11]: $29/month
+            - list [ref=f4e12]:
+              - listitem [ref=f4e13]: Up to 10 projects
+              - listitem [ref=f4e16]: 5GB storage
+              - listitem [ref=f4e19]: Community support
+              - listitem [ref=f4e22]: API access
+            - button "Get Started" [ref=f4e25] [cursor=pointer]
+          - generic [ref=f4e28]:
+            - generic [ref=f4e29]: MOST POPULAR
+            - heading "Pro" [level=3] [ref=f4e31]
+            - paragraph [ref=f4e32]: For growing teams
+            - generic [ref=f4e33]: $79/month
+            - list [ref=f4e34]:
+              - listitem [ref=f4e35]: Unlimited projects
+              - listitem [ref=f4e38]: 500GB storage
+              - listitem [ref=f4e41]: Priority support
+              - listitem [ref=f4e44]: Full API access
+            - button "Start Free Trial" [ref=f4e47] [cursor=pointer]
+          - generic [ref=f4e50]:
+            - heading "Enterprise" [level=3] [ref=f4e52]
+            - paragraph [ref=f4e53]: For large organizations
+            - generic [ref=f4e54]:
+              - text: Custom
+              - generic [ref=f4e55]: Contact sales
+            - list [ref=f4e56]:
+              - listitem [ref=f4e57]: Everything in Pro
+              - listitem [ref=f4e60]: Unlimited storage
+              - listitem [ref=f4e63]: Dedicated support
+              - listitem [ref=f4e66]: Custom integrations
+            - button "Contact Sales" [ref=f4e69] [cursor=pointer]
+  - alert [ref=e75]
