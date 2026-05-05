@@ -12,8 +12,8 @@ import { ChatInterface } from "@/components/chat/ChatInterface";
 import { FileTree } from "@/components/editor/FileTree";
 import { CodeEditor } from "@/components/editor/CodeEditor";
 import { PreviewFrame } from "@/components/preview/PreviewFrame";
-import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { HeaderActions } from "@/components/HeaderActions";
+import { cn } from "@/lib/utils";
 
 interface MainContentProps {
   user?: {
@@ -60,17 +60,23 @@ export function MainContent({ user, project }: MainContentProps) {
               <div className="h-full flex flex-col bg-white">
                 {/* Top Bar */}
                 <div className="h-14 border-b border-neutral-200/60 px-6 flex items-center justify-between bg-neutral-50/50">
-                  <Tabs
-                    value={activeView}
-                    onValueChange={(v) =>
-                      setActiveView(v as "preview" | "code")
-                    }
-                  >
-                    <TabsList className="bg-white/60 border border-neutral-200/60 p-0.5 h-9 shadow-sm">
-                      <TabsTrigger value="preview" className="data-[state=active]:bg-white data-[state=active]:text-neutral-900 data-[state=active]:shadow-sm text-neutral-600 px-4 py-1.5 text-sm font-medium transition-all">Preview</TabsTrigger>
-                      <TabsTrigger value="code" className="data-[state=active]:bg-white data-[state=active]:text-neutral-900 data-[state=active]:shadow-sm text-neutral-600 px-4 py-1.5 text-sm font-medium transition-all">Code</TabsTrigger>
-                    </TabsList>
-                  </Tabs>
+                  <div className="inline-flex bg-white/60 border border-neutral-200/60 p-0.5 h-9 rounded-lg shadow-sm">
+                    {(["preview", "code"] as const).map((view) => (
+                      <button
+                        key={view}
+                        type="button"
+                        onMouseDown={(e) => { e.preventDefault(); setActiveView(view); }}
+                        className={cn(
+                          "inline-flex items-center justify-center rounded-md px-4 py-1.5 text-sm font-medium transition-all",
+                          activeView === view
+                            ? "bg-white text-neutral-900 shadow-sm"
+                            : "text-neutral-600"
+                        )}
+                      >
+                        {view.charAt(0).toUpperCase() + view.slice(1)}
+                      </button>
+                    ))}
+                  </div>
                   <HeaderActions user={user} projectId={project?.id} />
                 </div>
 
