@@ -65,7 +65,8 @@ export function MainContent({ user, project }: MainContentProps) {
                       <button
                         key={view}
                         type="button"
-                        onMouseDown={(e) => { e.preventDefault(); setActiveView(view); }}
+                        onMouseDown={(e) => e.preventDefault()}
+                        onClick={() => setActiveView(view)}
                         className={cn(
                           "inline-flex items-center justify-center rounded-md px-4 py-1.5 text-sm font-medium transition-all",
                           activeView === view
